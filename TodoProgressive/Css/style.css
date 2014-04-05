@@ -46,20 +46,19 @@ input {
 
 /* ADD STYLES HERE */
 
-
 #todosList {
     -webkit-column-count: 2;
     -moz-column-count: 2;
-    column-count: 2;
+    column-count: 2; /* Split todos into two columns (if possible) */
 }
 
 #todosList li {
-    box-shadow: 5px 5px #888;
+    box-shadow: 5px 5px #888; /* make things look a bit better (if possible) */
     list-style-type: none;
 }
 
 .newTodo {
-    border-radius: 1em;
+    border-radius: 1em; /* make things look a bit better (if possible) */
 }
 
 
@@ -68,5 +67,5 @@ input {
 }
 
 .btn {
-    border-radius: 8px;
+    border-radius: 8px; /* make things look a bit better (if possible) */
 }

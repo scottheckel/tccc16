@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoProgressive", "TodoProgressive\TodoProgressive.csproj", "{8BD7DC56-6F1F-4194-993E-0950723C7564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoProgressive.Tests", "TodoProgressive.Tests\TodoProgressive.Tests.csproj", "{77B44C66-4A96-4D5D-B88D-A5C161DF4341}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BD7DC56-6F1F-4194-993E-0950723C7564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD7DC56-6F1F-4194-993E-0950723C7564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD7DC56-6F1F-4194-993E-0950723C7564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD7DC56-6F1F-4194-993E-0950723C7564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B44C66-4A96-4D5D-B88D-A5C161DF4341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B44C66-4A96-4D5D-B88D-A5C161DF4341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B44C66-4A96-4D5D-B88D-A5C161DF4341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B44C66-4A96-4D5D-B88D-A5C161DF4341}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

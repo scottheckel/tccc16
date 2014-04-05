@@ -1,0 +1,46 @@
+﻿@model IEnumerable<TodoProgressive.Models.Todo>
+
+@{
+    ViewBag.Title = "My Todo List";
+}
+
+<div id="app">
+    @using (Html.BeginForm("Create", "Todo"))
+    {
+        <fieldset class="newTodo">
+            <label for="text">New Todo</label>
+            <input type="text" name="text" id="text" placeholder="New todo" />
+            <input type="submit" value="Create" class="createNew" />
+        </fieldset>
+    }
+
+    <h2>My Todo List</h2>
+
+    <ul id="todosList">
+        @foreach (var item in Model)
+        {
+            <li data-todoid="@item.TodoId" data-iscomplete="@item.IsComplete" data-location="@item.Location">
+                <a href="/todo/edit/@item.TodoId" class="todo">@item.Text</a>
+                @if(item.IsComplete) {
+                    <span class="complete btn">Complete!</span>
+                } else {
+                    <a href="/Todo/Complete/@item.TodoId" class="markComplete btn">Mark Complete?</a>
+                }
+            </li>
+        }
+    </ul>
+</div>
+<script type="text/template" id="todoTemplate">
+<li data-todoid="<%=TodoId%>" data-iscomplete="<%=IsComplete%>" data-location="<%=Location%>">
+    <a href="/todo/edit/<%=TodoId%>" class="todo"><%=Text%></a>
+    <% if(IsComplete===true||IsComplete==="True") { %>
+        <span class="complete btn">Complete!</span>
+    <% } else { %>
+        <a href="/Todo/Complete/<%=TodoId%>" class="markComplete btn">Mark Complete?</a>
+    <% } %>
+</li>
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/underscore.min.js"></script>
+<script src="/js/backbone.min.js"></script>
+<script src="/js/main.js"></script>

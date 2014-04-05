@@ -1,0 +1,19 @@
+﻿@model TodoProgressive.Models.Todo
+
+@{
+    ViewBag.Title = "Complete";
+}
+
+<h2>Mark Todo Complete</h2>
+
+@using(Html.BeginForm()) {
+    if (Model.IsComplete) {
+        <p>Are you sure you want to mark the todo as not complete?</p>
+    } else {
+        <p>Are you sure you want to mark the todo as complete?</p>
+    }
+    <p>
+        <input type="submit" value="Yes" />
+        <a href="/" class="btn">No</a>
+    </p>
+}

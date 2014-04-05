@@ -1,0 +1,72 @@
+﻿body {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+input {
+    background: #b3d4fc;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.createNew {
+    background: #E9872D;
+}
+
+.newTodo {
+    background: #287FC2;
+    color: #fff;
+    border: 0;
+    text-align: center;
+}
+
+.complete {
+    background: #a4cd3c;
+    color: #fff;
+}
+
+.markComplete {
+    background: #E9872D;
+    color: #fff;
+}
+
+.btn {
+    padding: 0.5em;
+    display: inline-block;
+}
+
+#todosList li {
+    margin: 0 0 1em;
+    padding: 0.5em;
+    background: #eee;
+}
+
+/* ADD STYLES HERE */
+
+
+#todosList {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+#todosList li {
+    box-shadow: 5px 5px #888;
+    list-style-type: none;
+}
+
+.newTodo {
+    border-radius: 1em;
+}
+
+
+.newTodo label {
+   /* display: none; */
+}
+
+.btn {
+    border-radius: 8px;
+}
